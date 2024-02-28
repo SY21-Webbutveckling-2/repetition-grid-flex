@@ -14,8 +14,27 @@ body {
 	color: white;
 }
 
+header {
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+header > nav > ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	gap: 20px;
+
+	list-style: none;
+}
+
 section {
-	margin-top: 500px;
+	margin-top: 50px;
 }
 
 article {
