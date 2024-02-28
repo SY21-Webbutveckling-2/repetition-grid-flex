@@ -12,32 +12,33 @@
 	display: grid;
 	grid-template-columns: 200px 300px 100px 150px;
 	grid-template-rows: 300px 300px 450px 100px;
+	grid-template-areas:
+		"h h h a"
+		"m m m a"
+		"m m m a"
+		"f f f a";
 }
 
 #header {
-	grid-column: 1 / 4;
-	grid-row: 1 / 2;
+	grid-area: h;
 
 	background-color: blue;
 }
 
 #main {
-	grid-column: 1 / 4;
-	grid-row: 2 / 4;
+	grid-area: m;
 
 	background-color: yellow;
 }
 
 #aside {
-	grid-column: 4 / 5;
-	grid-row: 1 / 5;
+	grid-area: a;
 
 	background-color: lime;
 }
 
 #footer {
-	grid-column: 1 / 4;
-	grid-row: 4 / 5;
+	grid-area: f;
 
 	background-color: red;
 }
